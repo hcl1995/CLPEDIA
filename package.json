@@ -3,7 +3,7 @@
     "namespace": "CLPEDIAWeb",
     "version": "1.0.1",
     "description": "HCl Portfolio",
-    "main": "Server.js",
+    "main": "server.js",
     "author": "choonloong",
     "license": "ISC",
     "dependencies": {
@@ -17,7 +17,7 @@
         "nodemon": "^2.0.2"
     },
     "scripts": {
-        "serve": "nodemon Server.js",
-        "start": "node Server.js"
+        "serve": "nodemon server.js",
+        "start": "node server.js"
     }
 }
