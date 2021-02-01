@@ -1,0 +1,23 @@
+{
+    "name": "clpediaweb",
+    "namespace": "CLPEDIAWeb",
+    "version": "1.0.0.0",
+    "description": "HCl Portfolio",
+    "main": "Server.js",
+    "author": "choonloong",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "multiparty": "^4.2.1",
+        "shelljs": "^0.8.3",
+        "stripe": "^8.132.0",
+        "yargs": "^16.0.3"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.2"
+    },
+    "scripts": {
+        "serve": "nodemon Server.js",
+        "start": "node Server.js"
+    }
+}
