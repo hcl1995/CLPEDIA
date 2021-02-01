@@ -97,8 +97,8 @@ app.post('/stripe_payment', (req, res) => {
                     }
                 ],
                 mode: 'payment',
-                success_url: `http://localhost:3000/`,
-                cancel_url: `http://localhost:3000/`
+                success_url: `https://clpedia.herokuapp.com/`,
+                cancel_url: `https://clpedia.herokuapp.com/`
             });
             res.json({ id: session.id });
         });
