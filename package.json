@@ -1,7 +1,7 @@
 {
     "name": "clpediaweb",
     "namespace": "CLPEDIAWeb",
-    "version": "1.0.0.0",
+    "version": "1.0.0",
     "description": "HCl Portfolio",
     "main": "Server.js",
     "author": "choonloong",
