@@ -21,9 +21,11 @@ function hostServer(argv) {
     app.use(express.static('public'));
     app.use('/', routes);
 
-    const port = argv.port;
-    app.listen(port, async () => {
-        console.log(`CLPEDIA Server Running At Port: ${port}\n`);
-    });
+    app.listen(process.env.PORT || 3000);
+
+    // const port = argv.port;
+    // app.listen(port, async () => {
+    //     console.log(`CLPEDIA Server Running At Port: ${port}\n`);
+    // });
 }
 hostServer(argv);
