@@ -3,12 +3,9 @@ const express = require('express');
 const router = express.Router();
 const multiparty = require('multiparty');
 
-const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+const stripe = require('stripe')('sk_test_51IFfKhBc8V5oX29ceBZKl9ZDhzxtH7ufZa9wqIwQnHGuuja3YY5fcekmoM2OqwtgDP7EIHt0mV5nQvo2IG5tRDhM00JbFHK6n6');
 
 const path = require('path');
-const fs = require('fs');
-const util = require('util');
-const readFileP = util.promisify(fs.readFile);
 
 const TATTOO_FLASH = {
     '1': {
@@ -71,7 +68,7 @@ router.get('/init', async (req, res) => {
 
 router.get('/stripe', (req, res) => {
     try {
-        res.send(process.env.STRIPE_PUBLISHABLE_KEY);
+        res.send('pk_test_51IFfKhBc8V5oX29cDEJVWH54o5gtH6U07fxj0ysK1Drq1Zq1yzdG9fRgsrd2X7EyLsgp5XhrcmXvpb6sMXhHSpuz00xAAiOENt');
     } catch (error) {
         notifyError(res, error, 504, 'Error');
     }
